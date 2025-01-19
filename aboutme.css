@@ -43,6 +43,12 @@
   height: 120px;
   border-radius: 50%; /* Make the image circular */
   border: 2px solid #fff;
+  object-fit: cover; /* Ensure the image scales properly */
+}
+
+.profile img:hover {
+  transform: scale(1.1); /* Scale the image on hover */
+  transition: transform 0.3s;
 }
 
 .profile-text {
@@ -68,6 +74,15 @@
   flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
+}
+
+.socials a:hover {
+  background: #ffffff20;
+  border-color: #aaa;
+  /*Smooth hover scale transition*/
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  color: #aaa;
 }
 
 .socials a {
