@@ -57,17 +57,6 @@
   text-align: left; /* Align text to the left */
 }
 
-.profile-text h1 {
-  font-size: 24px;
-  margin: 0; /* Remove extra margins */
-}
-
-.profile-text h2 {
-  font-size: 16px;
-  margin: 5px 0 0; /* Space between name and socials */
-  color: #aaa; /* Optional: Adjust color for 'Socials' text */
-}
-
 /* Social links */
 .socials {
   display: flex;
@@ -77,8 +66,8 @@
 }
 
 .socials a:hover {
-  background: #ffffff20;
-  border-color: #aaa;
+  background: #d6d3d320;
+  border-color: white;
   /*Smooth hover scale transition*/
   transform: scale(1.05);
   transition: transform 0.3s;
@@ -97,6 +86,14 @@
   font-size: 16px;
 }
 
+.socials a h3{
+  color: white;
+}
+
+.socials a h3:hover{
+  font-style: italic;
+}
+
 .socials img {
   width: 40px; /* Adjust size as needed */
   height: 40px; /* Ensure it's a perfect square */
@@ -105,7 +102,6 @@
   object-fit: cover; /* Ensures the image scales properly inside the circle */
   margin-right: 10px; /* Space between the image and text */
 }
-
 
 /* About me */
 .about {
@@ -117,6 +113,12 @@
   border: 1px solid #fff;
 }
 
+.about-me-text{
+  color: white;
+  text-align: left;
+  margin-top: 25px;
+  margin-left: 1px;
+}
 .about::-webkit-scrollbar {
   width: 5px;
 }
