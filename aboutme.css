@@ -1,5 +1,6 @@
- /* Reset and basic styles */
- body {
+/* Existing styles untouched */
+/* Reset and basic styles */
+body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -23,8 +24,8 @@
 /* Centered container */
 .container {
   opacity: 0; /* Start hidden */
-    transform: translateY(20px); /* Initial downward offset */
-    transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
+  transform: translateY(20px); /* Initial downward offset */
+  transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
   position: relative;
   margin: 50px auto;
   max-width: 550px;
@@ -35,15 +36,15 @@
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
 }
 
-.container:hover{
-  /*Small transition of scale on hover*/
+.container:hover {
+  /* Small transition of scale on hover */
   transform: scale(1.01);
   transition: transform 1s;
 }
 
 .fade-in {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Reset offset */
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset offset */
 }
 
 /* Profile section */
@@ -84,7 +85,7 @@
 .socials a:hover {
   background: #d6d3d320;
   border-color: white;
-  /*Smooth hover scale transition*/
+  /* Smooth hover scale transition */
   transform: scale(1.05);
   transition: transform 0.3s;
   color: #aaa;
@@ -102,11 +103,11 @@
   font-size: 16px;
 }
 
-.socials a h3{
+.socials a h3 {
   color: white;
 }
 
-.socials a h3:hover{
+.socials a h3:hover {
   font-style: italic;
 }
 
@@ -130,26 +131,27 @@
   overflow-x: hidden;
 }
 
-.about p{
+.about p {
   margin-top: 5px;
   font-weight: 500;
 }
 
-.about p:hover{
-  /*Add shadow behind text*/
+.about p:hover {
+  /* Add shadow behind text */
   text-shadow: 0px 0px 5px #000000;
   font-style: italic;
 }
 
-.about-me-text{
+.about-me-text {
   color: white;
   text-align: left;
   margin-top: 10px;
   margin-left: 1px;
 }
+
 .about::-webkit-scrollbar {
   width: 8px;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 .about::-webkit-scrollbar-thumb {
@@ -207,4 +209,64 @@
 
 .modal-close:hover {
   background-color: #0055aa;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .profile {
+    flex-direction: column; /* Stack elements */
+    align-items: center; /* Center-align */
+  }
+
+  .profile img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .socials a {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .socials img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .about {
+    height: auto;
+    font-size: 14px;
+  }
+
+  .modal-content {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .socials a {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .about {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .modal-content {
+    padding: 15px;
+    width: 90%;
+  }
 }
