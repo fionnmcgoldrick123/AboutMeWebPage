@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
 
-    <!-- Add css from aboutme.css -->
+    <!-- Link CSS and JS -->
     <link rel="stylesheet" href="aboutme.css">
-
+    <script src="aboutme.js" defer></script>
 </head>
 
 <body>
-
     <div class="background-video">
         <video autoplay loop muted playsinline class="background-video">
             <source src="./Resources/bg2.mp4" type="video/mp4">
@@ -32,32 +31,28 @@
             </div>
         </div>
 
-
         <!-- Social Links -->
         <div class="socials">
-
-            <a href="#">
+            <a href="https://www.linkedin.com/in/fionn-mcgoldick-undefined-44a2182a1/">
                 <img src="./Resources/linkdin.png" alt="LinkedIn">
                 <h3>LinkedIn</h3>
             </a>
-            <a href="#">
+            <a href="#" class="hoverable discord-link">
                 <img src="./Resources/discord.png" alt="Discord">
                 <h3>Discord</h3>
             </a>
-            <a href="#">
+            <a href="https://github.com/fionnmcgoldrick123">
                 <img src="./Resources/github.png" alt="GitHub">
                 <h3>GitHub</h3>
             </a>
-            <a href="#">
+            <a href="https://x.com/fionnmc2002">
                 <img src="./Resources/X.jpg" alt="X">
                 <h3>X</h3>
             </a>
-
-            <a href="#">
+            <a href="https://www.instagram.com/fionnmcg2002/?next=%2F">
                 <img src="./Resources/instagram.jpeg" alt="Instagram">
                 <h3>Instagram</h3>
             </a>
-
         </div>
 
         <div class="about-me-text">
@@ -83,7 +78,16 @@
             <p style="font-family:'Times New Roman', Times, serif; font-style: italic; transition: transform 0.3s; text-align: center;"
                 onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">Email:
                 fionnmc123@gmail.com</p>
+        </div>
+    </div>
 
+    <!-- Modal -->
+    <div id="discordModal" class="modal">
+        <div class="modal-content">
+            <img src="./Resources/discord.png" alt="Discord Logo" class="modal-image">
+            <p> Add Me:  </p>
+            <p class="modal-text"><strong>JoyBoy#0113</strong></p>
+            <button class="modal-close">Close</button>
         </div>
     </div>
 </body>
